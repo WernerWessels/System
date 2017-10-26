@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>System</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "About Us", welcome_about_path %></li>
+    <li><%= link_to "Contact", welcome_contact_path %></li>
+    <li><%= link_to "Features", welcome_features_path %></li>
+    <li><%= link_to "FAQs", welcome_faq_path %></li>
+    <li><%= link_to "Quotes", quotes_path %></li>
+    <li><%= link_to "Login", root_path %></li>
+  </ul>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <%= yield %>
+
+</div>
+
+  </body>
+</html>

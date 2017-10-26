@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @quote.date %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @quote.company %>
+</p>
+
+<p>
+  <strong>Vat:</strong>
+  <%= @quote.vat %>
+</p>
+
+<p>
+  <strong>Salesperson:</strong>
+  <%= @quote.salesperson %>
+</p>
+
+<%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'Back', quotes_path %>
